@@ -35,6 +35,7 @@ public class InventoryService {
         inventoryRepo.deleteById(id);
     }
 
+    @Transactional
     public void update(String author, Integer id) {
         inventoryRepo.update(author,id);
     }
